@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+body 
+{
+	background-color: black;
+	outline-width: 25px;
+	outline-color: green;
+	outline-style: solid;
+	height: 100%;
+}
+
+[class*="window-"] {
+   border-color: red;
+   border-width: 10px;
+   border-style: dashed;
+}
+
+h1 {
+	color: yellow;
+}
+
+@media only screen and (min-width: 768px) {
+   
+    .window-1 {width: 50%;}
+    .window-3 {width: 25%;}
+}
+
+@media only screen and (min-width: 992px) {
+  .window-1 {width: 75%;}
+   .window-3 {width: 50%;}
+   body {
+	background-color: green;
+	outline-width: 25px;
+	outline-color: black;
+	outline-style: solid;
+	height: 100%;
+
+   }
+}
+
+@media only screen and (min-width: 1200px) {
+  .window-1 {width: 50%;}
+  .window-3 {width: 75%;}
+  	body {background-color: blue;
+	outline-width: 25px;
+	outline-color: red;
+	outline-style: solid;
+	height: 100%;
+}
+}
+</style>
+
+<body>
+<div class="window-3">
+	<h1>Awesome!</h1>
+</div>
+<h1 class="window-1">Things are changing!</h1>
+
+</body>
+
+</html>
